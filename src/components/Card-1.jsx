@@ -37,6 +37,7 @@ function Card() {
 
             setrating(1)
             console.log(rating)
+            setnotselected("hidden")
         }
 
         else if (bsem1 === 'bg-gray-400 text-white w-12 h-12 rounded-full') {
@@ -73,6 +74,7 @@ function Card() {
 
             setrating(2)
             console.log(rating)
+            setnotselected("hidden")
         }
 
         else if (bsem2 === 'bg-gray-400 text-white w-12 h-12 rounded-full') {
@@ -109,6 +111,7 @@ function Card() {
 
             setrating(3)
             console.log(rating)
+            setnotselected("hidden")
         }
 
         else if (bsem3 === 'bg-gray-400 text-white w-12 h-12 rounded-full') {
@@ -146,6 +149,7 @@ function Card() {
 
             setrating(4)
             console.log(rating)
+            setnotselected("hidden")
         }
 
         else if (bsem4 === 'bg-gray-400 text-white w-12 h-12 rounded-full') {
@@ -182,6 +186,7 @@ function Card() {
 
             setrating(5)
             console.log(rating)
+            setnotselected("hidden")
         }
 
         else if (bsem5 === 'bg-gray-400 text-white w-12 h-12 rounded-full') {
@@ -217,9 +222,8 @@ function Card() {
                     <img src={Estrela} className='h-4'></img>
                 </span>
                 <div className='flex flex-col justify-center gap3'>
-                    <h1 className='font-overpass text-3xl text-white '>How did we do?</h1>
-                    <p className='text-gray-400'> Please let us know how we did with your support request. All feedback is appreciated
-                        to help us improve our offering!</p>
+                    <h1 className='font-overpass text-3xl text-white '>O que achou?</h1>
+                    <p className='text-gray-400'> Por favor, deixe-nos saber como nos saímos com seu envio ao suporte. Todos os comentários são apreciados para nos ajudar a melhorar nossa oferta!</p>
                 </div>
                 <ul className='flex justify-around'>
                     <li><button className={bsem1} onClick={mudcor1}>1</button></li>
@@ -229,9 +233,9 @@ function Card() {
                     <li><button className={bsem5} onClick={mudcor5}>5</button></li>
                 </ul>
                 <div className="flex flex-col items-start">
-                    <button onClick={mudinterface} className='bg-orange text-white w-full h-11 font-overpass rounded-full hover:bg-white hover:text-orange-600'>SUBMIT</button>
+                    <button onClick={mudinterface} className='bg-orange text-white w-full h-11 font-overpass rounded-full hover:bg-white hover:text-orange-600'>Enviar</button>
                     <div className={notselected}>
-                        <p className="text-gray-400 mt-2">Select one rating</p>
+                        <p className="text-gray-400 mt-2">Selecione uma nota</p>
                     </div>
                 </div>
             </div>
