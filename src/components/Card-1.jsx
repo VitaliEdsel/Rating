@@ -1,5 +1,6 @@
 import Estrela from '../assets/icon-star.svg'
 import { useState } from 'react';
+import {Link} from 'react-router-dom'
 
 function Card() {
 
@@ -210,9 +211,10 @@ function Card() {
                 <li><button className={bsem4} onClick={mudcor4}>4</button></li>
                 <li><button className={bsem5} onClick={mudcor5}>5</button></li>
             </ul>
-            <button className='bg-orange text-white w-full h-11 font-overpass rounded-full hover:bg-white hover:text-orange-600'>SUBMIT</button>
+            <Link to='/checked'><button className='bg-orange text-white w-full h-11 font-overpass rounded-full hover:bg-white hover:text-orange-600'>SUBMIT</button></Link>
         </div>
     )
 }
 
 export default Card
+export var rating
