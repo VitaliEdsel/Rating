@@ -1,13 +1,16 @@
 import Card from './components/Card-1'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
 function App() {
 
   return (
-    <div>
+    <Router>
       <div className='h-screen bg-very-dark-blue flex justify-center items-center'>
-        <Card/>
+        <Routes>
+          <Route path='/' element={<Card />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   )
 }
 
